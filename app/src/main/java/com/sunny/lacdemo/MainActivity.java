@@ -33,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
         MutableLiveData<String> s=viewModel.getString();
 
         TextView textView=findViewById(R.id.TextIV);
-        textView.setText("vamsi sai and sreedhar");
+        textView.setText("vamsi sai");
         textView.setTextColor(Integer.parseInt("#3700b3"));
-        textView.setAllCaps(true);
-        //hloadwfwsdfsx
 
         s.observe(this, new Observer<String>() {
             @Override
@@ -54,6 +52,21 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "hi toast bro ....very good and yummy", Toast.LENGTH_SHORT).show();
             }
         });
+
+        //....this is a button and its implementation
+
+        findViewById(R.id.txt3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(MainActivity.this, "iam toast", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "iam toast", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
+
+
 
 
 
