@@ -14,7 +14,9 @@ import android.widget.Toast;
 
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         MutableLiveData<String> s=viewModel.getString();
 
         TextView textView=findViewById(R.id.TextIV);
+        textView.setText("SREEDHAR");
 
         s.observe(this, new Observer<String>() {
             @Override
