@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         MutableLiveData<String> s=viewModel.getString();
 
         TextView textView=findViewById(R.id.TextIV);
-        textView.setText("vamsi sai");
+        textView.setText("Sreedher sai");
         textView.setTextColor(Integer.parseInt("#3700b3"));
 
         s.observe(this, new Observer<String>() {
