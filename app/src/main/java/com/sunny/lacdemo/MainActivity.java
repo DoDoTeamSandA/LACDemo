@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
         MutableLiveData<String> s=viewModel.getString();
 
         TextView textView=findViewById(R.id.TextIV);
-        textView.setText("vamsi sai");
+        textView.setText("vamsi sai and sreedhar");
         textView.setTextColor(Integer.parseInt("#3700b3"));
+        textView.setAllCaps(true);
+        //hloadwfwsdfsx
 
         s.observe(this, new Observer<String>() {
             @Override
