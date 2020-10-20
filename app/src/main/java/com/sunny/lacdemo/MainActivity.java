@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView=findViewById(R.id.TextIV);
         textView.setText("SREEDHAR");
+        textView.setTextColor(Integer.parseInt("#3700b3"));
 
         s.observe(this, new Observer<String>() {
             @Override
