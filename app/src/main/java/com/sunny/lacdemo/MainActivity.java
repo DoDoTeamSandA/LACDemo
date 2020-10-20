@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         MutableLiveData<String> s=viewModel.getString();
 
         TextView textView=findViewById(R.id.TextIV);
-        textView.setText("SREEDHAR");
+        textView.setText("vamsi sai");
         textView.setTextColor(Integer.parseInt("#3700b3"));
 
         s.observe(this, new Observer<String>() {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.txt2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "iam toast iam the toast aaaaha", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "hi toast bro ....very good and yummy", Toast.LENGTH_SHORT).show();
             }
         });
 
