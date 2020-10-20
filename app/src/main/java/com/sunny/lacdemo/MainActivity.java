@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -40,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //iam trying something new
+
+        findViewById(R.id.txt2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "iam toast iam the toast aaaaha", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
 
 
 
